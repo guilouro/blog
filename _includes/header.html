@@ -1,0 +1,13 @@
+<header>
+    <div class="logo logo-ph">{% include icons/logo.html %}</div>
+    <nav>
+    <a href="/">Home</a>
+    {% for page in site.pages %}
+          {% if page.title %}
+          <a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+          {% endif %}
+    {% endfor %}
+    </nav>
+    <h1>Developers</h1>
+    <h2>Group</h2>
+</header>

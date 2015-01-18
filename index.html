@@ -1,0 +1,23 @@
+---
+layout: default
+---
+<section>         
+    <div class="posts">
+       <h1>Posts</h1>
+        <div class="row">
+           {% for post in site.posts %}
+            <div class="col-md-4 efeitos">
+                <figure>
+                    <img src="/assets/img/4.png" alt="img04">
+                    <figcaption>
+                        <h2>{{ post.title }}</h2>
+                        <span>Gabriel Azevedo</span>
+                        <a href="{{ post.url | prepend: site.baseurl }}">Leia mais</a>
+                    </figcaption>
+                </figure>
+            </div>
+            {% endfor %}
+        </div>
+</section>
+
+
